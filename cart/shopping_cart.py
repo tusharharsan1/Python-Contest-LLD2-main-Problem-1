@@ -68,7 +68,7 @@ class ShoppingCart:
         Args:
             strategy (DiscountStrategy): The discount strategy to use.
         """
-        # ✏️ TODO 4a: Store strategy in self._discount_strategy
+        # TODO 4a: Store strategy in self._discount_strategy
         pass
 
     # ==========================================================
@@ -84,5 +84,5 @@ class ShoppingCart:
         Returns:
             float: Final price after discount.
         """
-        # ✏️ TODO 4b: Calculate final price using self._discount_strategy
+        # TODO 4b: Calculate final price using self._discount_strategy
         pass

@@ -24,12 +24,12 @@ Complete the `FlatDiscount` class below:
 Examples:
 ---------
   strategy = FlatDiscount(100.0)
-  strategy.calculate_discount(500.0)  → 100.0
-  strategy.calculate_discount(80.0)   → 80.0   (capped at cart_total)
-  strategy.calculate_discount(100.0)  → 100.0
-  strategy.calculate_discount(0.0)    → 0.0
+  strategy.calculate_discount(500.0)  -> 100.0
+  strategy.calculate_discount(80.0)   -> 80.0   (capped at cart_total)
+  strategy.calculate_discount(100.0)  -> 100.0
+  strategy.calculate_discount(0.0)    -> 0.0
 
-  FlatDiscount(-50.0)  → raises ValueError
+  FlatDiscount(-50.0)  -> raises ValueError
 """
 
 from strategies.discount_strategy import DiscountStrategy
@@ -39,9 +39,9 @@ class FlatDiscount(DiscountStrategy):
     """Applies a flat amount discount capped at the cart total."""
 
     def __init__(self, amount: float):
-        # ✏️ TODO 2a: Validate amount (amount >= 0) and store it
+        # TODO 2a: Validate amount (amount >= 0) and store it
         pass
 
     def calculate_discount(self, cart_total: float) -> float:
-        # ✏️ TODO 2b: Return discount capped at cart_total
+        # TODO 2b: Return discount capped at cart_total
         pass

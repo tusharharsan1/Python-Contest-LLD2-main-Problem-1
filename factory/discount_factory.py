@@ -20,21 +20,21 @@ This method should:
 1. Take a `discount_type` string (e.g. "percentage", "flat") and optional `**kwargs`.
 
 2. Return the correct DiscountStrategy instance:
-   - "percentage" → PercentageDiscount(percentage=kwargs["percentage"])
-   - "flat"       → FlatDiscount(amount=kwargs["amount"])
+   - "percentage" -> PercentageDiscount(percentage=kwargs["percentage"])
+   - "flat"       -> FlatDiscount(amount=kwargs["amount"])
 
 3. Raise a ValueError with a helpful message if discount_type is not recognized.
 
 Examples:
 ---------
   DiscountFactory.create_discount("percentage", percentage=10.0)
-    → returns a PercentageDiscount(10.0) object
+    -> returns a PercentageDiscount(10.0) object
 
   DiscountFactory.create_discount("flat", amount=50.0)
-    → returns a FlatDiscount(50.0) object
+    -> returns a FlatDiscount(50.0) object
 
   DiscountFactory.create_discount("mystery")
-    → raises ValueError
+    -> raises ValueError
 """
 
 from strategies.discount_strategy import DiscountStrategy
@@ -47,5 +47,5 @@ class DiscountFactory:
 
     @staticmethod
     def create_discount(discount_type: str, **kwargs) -> DiscountStrategy:
-        # ✏️ TODO 3: Implement factory creation logic based on discount_type
+        # TODO 3: Implement factory creation logic based on discount_type
         pass

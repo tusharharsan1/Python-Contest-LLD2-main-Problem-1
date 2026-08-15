@@ -21,12 +21,12 @@ Complete the `PercentageDiscount` class below:
 Examples:
 ---------
   strategy = PercentageDiscount(10.0)
-  strategy.calculate_discount(500.0)   → 50.0
-  strategy.calculate_discount(1000.0)  → 100.0
-  strategy.calculate_discount(0.0)     → 0.0
+  strategy.calculate_discount(500.0)   -> 50.0
+  strategy.calculate_discount(1000.0)  -> 100.0
+  strategy.calculate_discount(0.0)     -> 0.0
 
-  PercentageDiscount(-5.0)   → raises ValueError
-  PercentageDiscount(150.0)  → raises ValueError
+  PercentageDiscount(-5.0)   -> raises ValueError
+  PercentageDiscount(150.0)  -> raises ValueError
 """
 
 from strategies.discount_strategy import DiscountStrategy
@@ -36,9 +36,9 @@ class PercentageDiscount(DiscountStrategy):
     """Applies a percentage discount to the cart total."""
 
     def __init__(self, percentage: float):
-        # ✏️ TODO 1a: Validate percentage (0 <= percentage <= 100) and store it
+        # TODO 1a: Validate percentage (0 <= percentage <= 100) and store it
         pass
 
     def calculate_discount(self, cart_total: float) -> float:
-        # ✏️ TODO 1b: Calculate and return the percentage discount
+        # TODO 1b: Calculate and return the percentage discount
         pass
